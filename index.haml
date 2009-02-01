@@ -1,5 +1,4 @@
 / TODO - make the calendar widget nicer
-/ %script{:type => "text/javascript", :charset => "utf-8", :src => "http://www.google.com/jsapi?key=ABQIAAAAaIhVrXhnIS5O7QrS_--IchQPIGa-TVZmamUVglfaxOjQ4Zjn1xQV7fHoEGlPZ4a0shqAqKxc2mGdpA"}
 / 
 / :javascript
 /   google.setOnLoadCallback(getMyFeed);
@@ -14,43 +13,64 @@
 /     }
 /   }
 / 
-%img{:src => "images/logo2.png", :style => "position: absolute; top: -1000px;"}
+/  
 
-#main
+/
 
-  %h1#logo
-    The Ottawa Group of Ruby Enthusiasts
+!!! XML
+!!!
+%html
+  %head
+    %title The Ottawa Group of Ruby Enthusiasts &mdash; OttawaRuby
+    %script{:type => "text/javascript", :charset => "utf-8", :src => "http://www.google.com/jsapi?key=ABQIAAAAaIhVrXhnIS5O7QrS_--IchQPIGa-TVZmamUVglfaxOjQ4Zjn1xQV7fHoEGlPZ4a0shqAqKxc2mGdpA"}
+    %link{:rel => "stylesheet", :href => "css/ottawaruby.css", :type => "text/css", :media => "all"}		
 
-  #whats-next
-    %h2 What&rsquo;s Next
+  %body
+
+    #wrapper
+
+      %h1#logo
+
+      #content
+        #whats-next
+          %h2 What&rsquo;s Next
+
+          .google-calendar
+            %iframe{:src => "http://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=250&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=3v6obk5b69bg6ru87ff74ov3o8%40group.calendar.google.com&amp;color=%23996666&amp;ctz=America%2FMontreal", :style => " border-width:0", :width => "700", :height => "250", :frameborder => "0", :scrolling => "no"}
+
+        #box
+          %h2 What is it?
+
+        #box
+          %h2 Where is it?
+          %img{:src => ""}
+          %p OGRE events are hosted at the Code Factory.  
+
+          .google-map
+            Some google map thing
+
+        #box
+          %h2 Who&rsquo;s involved?
+
+          %ul
+            %li
+              .member Cody Fauser
+              .projects
+                %a{:href => ""} ActiveMerchant
+
+            %li
+              .member James MacCaulay
+              .projects
+                %a{:href => ""} ActiveMerchant
+
+            %li
+              .member Edward Ocampo-Gooding
+              .projects
+                %a{:href => ""} Reckoning
     
-    .google-calendar
-      %iframe{:src => "http://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=100&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=3v6obk5b69bg6ru87ff74ov3o8%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FMontreal", :style => "border-width:0", :width => "400", :height => "100", :frameborder => "0", :scrolling => "no"}
-  
-  #what-is-it
-    %h2 What is it?
-  
-  #where-is-it
-    %h2 Where is it?
-    
-    .google-map
-      Some google map thing
-  
-  #who-is-it
-    %h2 Who is it?
-    
-    %ul
-      %li
-        .member Cody Fauser
-        .projects
-          %a{:href => ""} ActiveMerchant
-          
-      %li
-        .member James MacCaulay
-        .projects
-          %a{:href => ""} ActiveMerchant
-          
-      %li
-        .member Edward Ocampo-Gooding
-        .projects
-          %a{:href => ""} Reckoning
+      #footer
+        %p &copy; 2009 OGRE
+        %p 
+          Design by 
+          %a{ :href => 'http://www.tetsutakara.com/', :target => 'blank' } 
+            Tetsuro Takara

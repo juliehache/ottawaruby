@@ -1,5 +1,4 @@
 <!-- TODO - make the calendar widget nicer -->
-<!-- %script{:type => "text/javascript", :charset => "utf-8", :src => "http://www.google.com/jsapi?key=ABQIAAAAaIhVrXhnIS5O7QrS_--IchQPIGa-TVZmamUVglfaxOjQ4Zjn1xQV7fHoEGlPZ4a0shqAqKxc2mGdpA"} -->
 <!-- 
 -->
 <!-- :javascript -->
@@ -17,47 +16,72 @@
 <!-- } -->
 <!-- 
 -->
-<img src='images/logo2.png' style='position: absolute; top: -1000px;' />
-<div id='main'>
-  <h1 id='logo'>
-    The Ottawa Group of Ruby Enthusiasts
-  </h1>
-  <div id='whats-next'>
-    <h2>What&rsquo;s Next</h2>
-    <div class='google-calendar'>
-      <iframe frameborder='0' height='100' scrolling='no' src='http://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=100&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=3v6obk5b69bg6ru87ff74ov3o8%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FMontreal' style='border-width:0' width='400'></iframe>
+<!-- 
+-->
+<!-- 
+-->
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>The Ottawa Group of Ruby Enthusiasts &mdash; OttawaRuby</title>
+    <script charset='utf-8' src='http://www.google.com/jsapi?key=ABQIAAAAaIhVrXhnIS5O7QrS_--IchQPIGa-TVZmamUVglfaxOjQ4Zjn1xQV7fHoEGlPZ4a0shqAqKxc2mGdpA' type='text/javascript'></script>
+    <link href='css/ottawaruby.css' media='all' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <div id='wrapper'>
+      <h1 id='logo'></h1>
+      <div id='content'>
+        <div id='whats-next'>
+          <h2>What&rsquo;s Next</h2>
+          <div class='google-calendar'>
+            <iframe frameborder='0' height='250' scrolling='no' src='http://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=250&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=3v6obk5b69bg6ru87ff74ov3o8%40group.calendar.google.com&amp;color=%23996666&amp;ctz=America%2FMontreal' style=' border-width:0' width='700'></iframe>
+          </div>
+        </div>
+        <div id='box'>
+          <h2>What is it?</h2>
+        </div>
+        <div id='box'>
+          <h2>Where is it?</h2>
+          <img src='' />
+          <p>OGRE events are hosted at the Code Factory.</p>
+          <div class='google-map'>
+            Some google map thing
+          </div>
+        </div>
+        <div id='box'>
+          <h2>Who&rsquo;s involved?</h2>
+          <ul>
+            <li>
+              <div class='member'>Cody Fauser</div>
+              <div class='projects'>
+                <a href=''>ActiveMerchant</a>
+              </div>
+            </li>
+            <li>
+              <div class='member'>James MacCaulay</div>
+              <div class='projects'>
+                <a href=''>ActiveMerchant</a>
+              </div>
+            </li>
+            <li>
+              <div class='member'>Edward Ocampo-Gooding</div>
+              <div class='projects'>
+                <a href=''>Reckoning</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id='footer'>
+        <p>&copy; 2009 OGRE</p>
+        <p>
+          Design by
+          <a href='http://www.tetsutakara.com/' target='blank'>
+            Tetsuro Takara
+          </a>
+        </p>
+      </div>
     </div>
-  </div>
-  <div id='what-is-it'>
-    <h2>What is it?</h2>
-  </div>
-  <div id='where-is-it'>
-    <h2>Where is it?</h2>
-    <div class='google-map'>
-      Some google map thing
-    </div>
-  </div>
-  <div id='who-is-it'>
-    <h2>Who is it?</h2>
-    <ul>
-      <li>
-        <div class='member'>Cody Fauser</div>
-        <div class='projects'>
-          <a href=''>ActiveMerchant</a>
-        </div>
-      </li>
-      <li>
-        <div class='member'>James MacCaulay</div>
-        <div class='projects'>
-          <a href=''>ActiveMerchant</a>
-        </div>
-      </li>
-      <li>
-        <div class='member'>Edward Ocampo-Gooding</div>
-        <div class='projects'>
-          <a href=''>Reckoning</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
+  </body>
+</html>

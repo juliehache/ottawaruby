@@ -1,0 +1,37 @@
+html {
+  background: #fff  url('../images/bg.gif') repeat;
+  font-family: Trebuchet, "Trebuchet MS", sans-serif;
+  color: #660000; }
+
+#wrapper {
+  width: 790px;
+  margin: 0px auto;
+  text-align: left; }
+
+#content {
+  background: #fff;
+  overflow: hidden;
+  padding: 0 20px 20px 20px; }
+
+#logo {
+  margin: 52px 0 0 0;
+  color: #993333;
+  background: #fff url('../images/logo.gif') no-repeat;
+  height: 120px;
+  padding: 0 10px 0 200px;
+  font-size: 1em; }
+
+#box {
+  width: 240px;
+  float: left;
+  margin: 0 5px 0 5px; }
+  #box ul {
+    color: #996666; }
+
+#footer {
+  background: #fff url('../images/footer.gif') no-repeat;
+  clear: both;
+  width: 70%; }
+  #footer p {
+    width: 200px;
+    float: right; }
