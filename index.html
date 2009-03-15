@@ -1,25 +1,3 @@
-<!-- TODO - make the calendar widget nicer -->
-<!-- 
--->
-<!-- :javascript -->
-<!-- google.setOnLoadCallback(getMyFeed); -->
-<!-- google.load("gdata", "1"); -->
-<!-- 
--->
-<!-- function getMyFeed() { -->
-<!-- var scope = 'http://www.google.com/calendar/feeds/'; -->
-<!-- if (!google.accounts.user.checkLogin(scope)) { -->
-<!-- google.accounts.user.login(); -->
-<!-- } else { -->
-<!-- // ready to go -->
-<!-- } -->
-<!-- } -->
-<!-- 
--->
-<!-- 
--->
-<!-- 
--->
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
@@ -33,27 +11,49 @@
       <h1 id='logo'></h1>
       <div id='content'>
         <div id='whats-next'>
-          <h2>What&rsquo;s Next</h2>
-          <div class='google-calendar'>
-            <script src='http://www.gmodules.com/ig/ifr?url=http://ottawaruby.ca/calendar-config.xml&amp;up_showCalendar2=1&amp;up_showAgenda=0&amp;up_calendarFeeds=(%7B%7D)&amp;up_firstDay=Sunday&amp;up_syndicatable=true&amp;up_stylesheet=&amp;up_sub=1&amp;up_c0u=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2F3v6obk5b69bg6ru87ff74ov3o8%2540group.calendar.google.com%2Fpublic%2Fbasic&amp;up_c0c=&amp;up_c1u=&amp;up_c1c=&amp;up_c2u=&amp;up_c2c=&amp;up_c3u=&amp;up_c3c=&amp;up_min=&amp;up_start=&amp;up_timeFormat=1%3A00pm&amp;up_calendarFeedsImported=0&amp;synd=open&amp;w=274&amp;h=157&amp;title=&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js'></script>
-            <!-- http://ottawaruby.ca/calendar-config.xml -->
-            <!-- %iframe{:src => "http://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=250&amp;wkst=1&amp;bgcolor=%23993333&amp;src=3v6obk5b69bg6ru87ff74ov3o8%40group.calendar.google.com&amp;color=%23993333&amp;ctz=America%2FMontreal", :style => " border-width:0", :width => "700", :height => "250", :frameborder => "0", :scrolling => "no"} -->
+          <h2>What&rsquo;s Next?</h2>
+          <div class='calendar'>
+            <h3>February 24:</h3>
+            <ul>
+              <li>
+                <a href='http://hobocentral.net'>
+                  Hobo &ndash; the web application builder for Ruby on Rails
+                </a>
+              </li>
+              <li>
+                <a href='http://shoooes.net'>
+                  Shoes &ndash; a Ruby GUI toolkit
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div id='box'>
+        <div class='box' id='what-is-it'>
           <h2>What is it?</h2>
+          <p>A group of enthusiasts who get together once in a while to hack, present, and talk about the Ruby programming language.</p>
+          <p>
+            <em>You should come by.</em>
+          </p>
+          <p>
+            <small>Post-meetup excursions have been known to involve the neighbourhood pubs. (Just sayin&rsquo;)</small>
+          </p>
         </div>
-        <div id='box'>
+        <div class='box' id='where-is-it'>
           <h2>Where is it?</h2>
-          <img src='' />
-          <p>OGRE events are hosted at the Code Factory.</p>
+          <p>The Code Factory, 2nd Floor:</p>
           <div class='google-map'>
-            Some google map thing
+            <iframe frameborder='0' height='275' marginheight='0' marginwidth='0' scrolling='no' src='http://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=246+Queen+Street,+ottawa&amp;sll=49.891235,-97.15369&amp;sspn=36.544557,79.189453&amp;ie=UTF8&amp;z=14&amp;iwloc=addr&amp;ll=45.427793,-75.697346&amp;output=embed&amp;s=AARTsJpheuTusuWXn4fkfrmo64ubKt3OWg' width='235'>            </iframe>
           </div>
         </div>
-        <div id='box'>
+        <div class='box' id='whos-involved'>
           <h2>Who&rsquo;s involved?</h2>
           <ul>
+            <li>
+              <div class='member'>Dwayne Litzenberger</div>
+              <div class='projects'>
+                <a href='http://www.dlitz.net/software/ruby-pixels/'>Ruby Pixels</a>
+              </div>
+            </li>
             <li>
               <div class='member'>Cody Fauser</div>
               <div class='projects'>
@@ -63,13 +63,13 @@
             <li>
               <div class='member'>James MacCaulay</div>
               <div class='projects'>
-                <a href=''>ActiveMerchant</a>
+                <a href='http://github.com/Shopify/active_shipping/tree/master'>ActiveShipping</a>
               </div>
             </li>
             <li>
-              <div class='member'>Edward Ocampo-Gooding</div>
+              <div class='member'>Tobi L&uuml;tke</div>
               <div class='projects'>
-                <a href=''>Reckoning</a>
+                <a href='http://github.com/tobi/liquid/tree/master'>Liquid</a>
               </div>
             </li>
           </ul>

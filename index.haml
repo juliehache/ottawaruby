@@ -1,60 +1,54 @@
-/ TODO - make the calendar widget nicer
-/ 
-/ :javascript
-/   google.setOnLoadCallback(getMyFeed);
-/   google.load("gdata", "1");
-/ 
-/   function getMyFeed() {
-/     var scope = 'http://www.google.com/calendar/feeds/';
-/     if (!google.accounts.user.checkLogin(scope)) {
-/       google.accounts.user.login();
-/     } else {
-/       // ready to go
-/     }
-/   }
-/ 
-/  
-
-/
-
 !!! XML
 !!!
 %html
   %head
     %title The Ottawa Group of Ruby Enthusiasts &mdash; OttawaRuby
     %script{:type => "text/javascript", :charset => "utf-8", :src => "http://www.google.com/jsapi?key=ABQIAAAAaIhVrXhnIS5O7QrS_--IchQPIGa-TVZmamUVglfaxOjQ4Zjn1xQV7fHoEGlPZ4a0shqAqKxc2mGdpA"}
-    %link{:rel => "stylesheet", :href => "css/ottawaruby.css", :type => "text/css", :media => "all"}		
+    %link{:rel => "stylesheet", :href => "css/ottawaruby.css", :type => "text/css", :media => "all"}
 
   %body
-
     #wrapper
-
       %h1#logo
 
       #content
         #whats-next
-          %h2 What&rsquo;s Next
+          %h2 What&rsquo;s Next?
 
-          .google-calendar
-            %script{:src => "http://www.gmodules.com/ig/ifr?url=http://ottawaruby.ca/calendar-config.xml&amp;up_showCalendar2=1&amp;up_showAgenda=0&amp;up_calendarFeeds=(%7B%7D)&amp;up_firstDay=Sunday&amp;up_syndicatable=true&amp;up_stylesheet=&amp;up_sub=1&amp;up_c0u=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2F3v6obk5b69bg6ru87ff74ov3o8%2540group.calendar.google.com%2Fpublic%2Fbasic&amp;up_c0c=&amp;up_c1u=&amp;up_c1c=&amp;up_c2u=&amp;up_c2c=&amp;up_c3u=&amp;up_c3c=&amp;up_min=&amp;up_start=&amp;up_timeFormat=1%3A00pm&amp;up_calendarFeedsImported=0&amp;synd=open&amp;w=274&amp;h=157&amp;title=&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js"}
-            / http://ottawaruby.ca/calendar-config.xml
-            / %iframe{:src => "http://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=250&amp;wkst=1&amp;bgcolor=%23993333&amp;src=3v6obk5b69bg6ru87ff74ov3o8%40group.calendar.google.com&amp;color=%23993333&amp;ctz=America%2FMontreal", :style => " border-width:0", :width => "700", :height => "250", :frameborder => "0", :scrolling => "no"}
+          .calendar
+            %h3 February 24:
+            
+            %ul
+              %li
+                %a{:href => "http://hobocentral.net"}
+                  Hobo &ndash; the web application builder for Ruby on Rails
+              %li
+                %a{:href => "http://shoooes.net"}
+                  Shoes &ndash; a Ruby GUI toolkit
 
-        #box
+        #what-is-it.box
           %h2 What is it?
+          
+          %p A group of enthusiasts who get together once in a while to hack, present, and talk about the Ruby programming language.
+          %p
+            %em You should come by.
+          %p
+            %small Post-meetup excursions have been known to involve the neighbourhood pubs. (Just sayin&rsquo;)
 
-        #box
+        #where-is-it.box
           %h2 Where is it?
-          %img{:src => ""}
-          %p OGRE events are hosted at the Code Factory.  
+          %p The Code Factory, 2nd Floor:
 
           .google-map
-            Some google map thing
+            %iframe{:width => "235", :height => "275", :frameborder => "0", :scrolling => "no", :marginheight => "0",  :marginwidth => "0", :src =>  "http://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=246+Queen+Street,+ottawa&amp;sll=49.891235,-97.15369&amp;sspn=36.544557,79.189453&amp;ie=UTF8&amp;z=14&amp;iwloc=addr&amp;ll=45.427793,-75.697346&amp;output=embed&amp;s=AARTsJpheuTusuWXn4fkfrmo64ubKt3OWg"}
 
-        #box
+        #whos-involved.box
           %h2 Who&rsquo;s involved?
 
           %ul
+            %li
+              .member Dwayne Litzenberger
+              .projects
+                %a{:href => "http://www.dlitz.net/software/ruby-pixels/"} Ruby Pixels
             %li
               .member Cody Fauser
               .projects
@@ -63,16 +57,16 @@
             %li
               .member James MacCaulay
               .projects
-                %a{:href => ""} ActiveMerchant
+                %a{:href => "http://github.com/Shopify/active_shipping/tree/master"} ActiveShipping
 
             %li
-              .member Edward Ocampo-Gooding
+              .member Tobi L&uuml;tke
               .projects
-                %a{:href => ""} Reckoning
-    
+                %a{:href => "http://github.com/tobi/liquid/tree/master"} Liquid
+
       #footer
         %p &copy; 2009 OGRE
         %p 
           Design by 
-          %a{ :href => 'http://www.tetsutakara.com/', :target => 'blank' } 
+          %a{ :href => 'http://www.tetsutakara.com/', :target => 'blank' }
             Tetsuro Takara
