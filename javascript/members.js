@@ -1,4 +1,4 @@
-/* A database? A data structure? A JSON ghetto-base. */
+// A database? A data structure? A JSON ghetto-base.
 var members = [
   {"name": "Dwayne Litzenberger",
    "projects": [{"name": "Ruby Pixels",
@@ -15,9 +15,14 @@ var members = [
 ];
 
 $(document).ready(function() {
+  
+  // Shuffle members
+  members.sort(function(a,b){return Math.round(Math.random())*-1})
+  
   for (var i=0; i < 4; i++) {
-    var name = members[i].name;
-    var project = members[i].projects[0];
+    var member = members.shift();
+    var name = member.name;
+    var project = member.projects[0];
     
     var memberElement = $("<div class='member'></div>").text(name);
     var projectElement = $("<div class='projects'></div>").html(
