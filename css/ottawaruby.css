@@ -16,15 +16,18 @@ a:link, a:visited, a:hover {
 #content {
   background: #fff;
   overflow: hidden;
-  padding: 0 20px 20px 20px; }
+  padding: 60px 20px 20px 20px; }
 
 #logo {
-  margin: 52px 0 0 0;
+  margin: 10px 0 -55px 0;
   color: #993333;
-  background: #fff url('../images/logo.gif') no-repeat;
+  background: transparent url('../images/logo.png') no-repeat;
   height: 120px;
   padding: 0 10px 0 200px;
-  font-size: 1em; }
+  font-size: 1em; 
+  position:relative;
+  z-index:1;
+}
 
 #whats-next .calendar {
   /* margin-left: 120px; */
@@ -58,9 +61,10 @@ a:link, a:visited, a:hover {
 }
 
 #footer {
-  background: #fff url('../images/footer.gif') no-repeat;
   clear: both;
-  width: 70%; }
-  #footer p {
-    width: 200px;
-    float: right; }
+  font-size: 0.7em;
+}
+
+#footer p {
+    float: right; 
+}
