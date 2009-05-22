@@ -1,0 +1,18 @@
+body {
+  background: #ccc;
+  font-family: Trebuchet, "Trebuchet MS", sans-serif; }
+
+a:link, a:visited, a:hover {
+  color: #9f3535;
+  text-decoration: underline; }
+
+#wrapper {
+  background: #fff;
+  width: 790px;
+  margin: 0px auto;
+  text-align: left; }
+
+#content {
+  background: #fff;
+  overflow: hidden;
+  padding: 60px 20px 20px 20px; }

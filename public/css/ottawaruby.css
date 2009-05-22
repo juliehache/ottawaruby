@@ -66,5 +66,6 @@ a:link, a:visited, a:hover {
 }
 
 #footer p {
-    float: right; 
+    float: right;
+ 		margin: 2px;
 }
