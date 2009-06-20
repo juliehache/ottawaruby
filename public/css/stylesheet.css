@@ -1,0 +1,108 @@
+body{
+	background:#ffe8e8;
+	font-family:Trebuchet MS;
+}
+
+.float-right{
+	float:right;
+}
+
+.left{
+	
+}
+
+.mid{
+	
+}
+
+.right{
+	
+}
+
+.hidden{
+	display:none;	
+}
+
+.logo{
+	margin-top:45px;
+	margin-bottom:30px;
+}
+
+.banner{ 
+	width:880px;
+	border-top:1px solid #eed1d1;
+	border-bottom:1px solid #eed1d1;
+	margin:0 0 50px 0;
+	padding: 30px 0 30px 0;
+	line-height: 55px;
+	color: #691a1a;
+	font-size: 210%;
+}
+
+.banner .ogre {
+	color: #d16b6b;
+}
+
+.column{
+	background:url('../images/column_bg.png');
+	width:250px !important;
+	height:260px !important; 
+	padding:15px;
+}
+
+.column h3 {
+	margin: 1em 0;
+}
+
+.column ul li {
+  margin-top: 1em;
+}
+
+.column a:link, a:visited {
+  color: #691a1a;
+  text-decoration: underline;
+}
+
+.column a:hover {
+	color: #fff;
+  text-decoration: none;
+	background: #d16b6b;
+}
+
+.column p.address{
+	margin: 15px 0 5px 0;
+}
+
+.column-headers{
+	color:#b18c8c;
+	margin-bottom: 40px;
+}
+
+.footer{
+	border-top:1px solid #eed1d1;
+	margin-top:55px;
+	margin-bottom:100px;
+	padding-top:5px;
+	color:#b18c8c;
+	font-size:12px;
+}
+
+.copyright{
+	margin-top:13px;
+}
+
+.tets-link{
+	display:block;
+	width:53px;
+	height:26px;
+	background: url('../images/tetsu_logo.png');
+	background-position:50% 0;
+	margin-left:5px;
+}
+
+.tets-link:hover{
+	background-position:50% 26px;
+}
+
+
+
